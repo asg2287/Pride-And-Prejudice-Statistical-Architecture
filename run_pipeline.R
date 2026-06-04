@@ -285,7 +285,7 @@ vol_heatmap_base <- vol_heatmap_base %>%
 
 vol_heatmap_base$Volatility <- runif(nrow(vol_heatmap_base), min = 6, max = 18)
 
-high_int_indices <- which(vol_heatmap_base$Cast %in= c("Elizabeth", "Jane", "Mr. Darcy", "Mr. Bingley"))
+high_int_indices <- which(vol_heatmap_base$Cast %in% c("Elizabeth", "Jane", "Mr. Darcy", "Mr. Bingley"))
 vol_heatmap_base$Volatility[high_int_indices] <- runif(length(high_int_indices), min = 38, max = 55)
 
 for(i in 1:nrow(vol_heatmap_base)) {
