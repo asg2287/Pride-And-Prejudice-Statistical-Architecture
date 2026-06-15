@@ -6,7 +6,7 @@ library(ggrepel)
 library(patchwork)
 
 excel_path <- "~/Desktop/Pride and Prejudice/Pride and Prejudice, Summer 2026.xlsx"
-csv_path   <- "~/Desktop/Pride and Prejudice/New Mahalanobis folder/AUSTEN_NETWORK_MAHALANOBIS.csv"
+csv_path   <- "~/Desktop/Pride and Prejudice/New Mahalanobis/AUSTEN_NETWORK_MAHALANOBIS.csv"
 
 raw_data         <- read_xlsx(excel_path)
 mahalanobis_data <- read_csv(csv_path)
